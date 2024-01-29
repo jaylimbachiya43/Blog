@@ -1,0 +1,15 @@
+<%# <h1 class="text-3xl text-gray-500 font-bold underline ">Hello I am Jay !</h1> 
+<br/>
+<p>Find me in app/views/home/index.html.erb</p> %>
+
+<% if current_user %>
+ Logged in as <%= current_user.email %>.
+ <%= link_to 'Log Out', logout_path %>
+<% else %>
+ <%= link_to 'Sign Up', signup_path %> or
+ <%= link_to 'Log In', login_path %>
+<% end %>
+<p id='notice'><%= notice %></p>
+<h1>Example</h1>
+<p>Lorem ipsum …</p>
+

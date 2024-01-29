@@ -1,0 +1,9 @@
+<h1>Hello Rails</h1>
+<p>This is my first rails application</p>
+
+<h1>Articles</h1>
+<% @articles.each do |article| %>
+  <%= article.id %><br>
+  <%= article.title %><br>
+  <%= article.body %><br>
+<% end %>
